@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol fill="none" viewBox="0 0 24 24" id="all" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM17.5 12a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM9.5 12a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM6 4.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM21 4.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM13.5 4.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z"
+              stroke="var(--current-color)" stroke-width="var(--icon-stroke-width)" stroke-linejoin="round"/>
+    </symbol>
+</svg>
