@@ -1,0 +1,33 @@
+.base_button {
+  display: flex;
+  align-items: center;
+  & .helper_counter {
+    font-size: 16px;
+  }
+}
+.button {
+  border-radius: 10px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding: 12px 16px;
+  & svg {
+    margin-right: 16px;
+  }
+}
+.menu-item-with-icon {
+  composes: button;
+  &:hover {
+    background: var(--current-color-hover);
+  }
+}
+.primary-item-with-icon {
+  composes: button;
+  background: linear-gradient(180deg, #2D3439 0%, #2D3439 100%);
+  justify-content: center;
+  color: white;
+}

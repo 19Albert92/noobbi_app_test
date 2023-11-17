@@ -13,8 +13,44 @@
     list-style: none;
     margin-right: 1rem;
     cursor: pointer;
-    &:hover {
-      color: blue;
+  }
+}
+
+.nav__search {
+  padding: 0 5rem;
+  position: relative;
+  & input {
+    width: 100%;
+    height: 48px;
+    border: none;
+  }
+  & svg {
+    position: absolute;
+    right: 6rem;
+    top: 25%;
+  }
+  & .header_menu_arrow {
+    right: 8rem;
+  }
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.local_menu {
+  //position: relative;
+}
+
+.nav__right {
+  & .avatar_menu {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    & img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

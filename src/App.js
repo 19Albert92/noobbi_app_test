@@ -1,21 +1,21 @@
-import {Route, Routes, Navigate} from 'react-router-dom';
-import {NotFoundPage, Profile, Posts, Todo} from "./pages";
-import {Body} from './components'
+import {Route, Routes} from 'react-router-dom';
+import {NotFoundPage, Profile} from "./pages";
+import {Body} from './components';
+import {ConfigProvider} from "./hoc/ConfigProvider";
 
 
 const App = () => {
     return (
-        <div>
+        <ConfigProvider>
             <Routes>
                 <Route path={'/'} element={<Body/>}>
                     <Route index path={'/'} element={<Profile/>}/>
-                    <Route path={'/todos'} element={<Todo/>}/>
-                    {/*<Route path={'/post/:id'} element={<Posts/>}/>*/}
-                    <Route path={'/post/:id'} element={<Navigate to={'/'} replace={true}/>}/>
+                    {/*<Route path={'post/:id'} element={<Posts/>}/>*/}
+                    {/*<Route path={'/post/:id'} element={<Navigate to={'/'} replace={true}/>}/>*/}
                     <Route path={'*'} Component={NotFoundPage}/>
                 </Route>
             </Routes>
-        </div>
+        </ConfigProvider>
     )
 }
 export default App;

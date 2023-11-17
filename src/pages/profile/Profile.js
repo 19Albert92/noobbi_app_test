@@ -1,12 +1,13 @@
 import styles from './Profile.module.scss';
-import {NavLink} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const Profile = () => {
+
+    const {t} = useTranslation();
+
     return (
         <div className={styles.profile}>
-            <h1>Hello world!</h1>
 
-            <NavLink to={'post/1'}>Go to Posts page</NavLink>
         </div>
     )
 }

@@ -1,13 +1,22 @@
 import {Header} from "../index";
 import {Outlet} from "react-router-dom";
-import Footer from "../footer/Footer";
+import {Suspense} from "react";
+import i18next from "./../../lib/trans";
+
+const Loading = () => {
+    return(
+        <>Loading...</>
+    )
+}
 
 const Body = () => {
-    return(
+    return (
         <div className={'body'}>
-            <Header/>
-            <Outlet/>
-            <Footer/>
+            <Suspense fallback={<Loading/>}>
+                <Header/>
+                <Outlet/>
+                {/*<Footer/>*/}
+            </Suspense>
         </div>
     )
 }

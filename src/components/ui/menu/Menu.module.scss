@@ -1,0 +1,14 @@
+.group_menu {
+
+}
+.menu__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & .menu__item_text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+}
